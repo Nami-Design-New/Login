@@ -1,0 +1,119 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-size: 0.9rem;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4cfcfd1;
+  height: 100vh;
+
+  .login-container {
+    background: #F5F5F5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2rem #f7f7f790;
+    gap: 1.5rem;
+    width: 350px;
+
+    .logo {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: #2EAAAE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin: 1rem auto;
+
+      img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .input-wrapper {
+          background: #fff;
+          box-shadow: 0 0 1rem hsl(231, 62%, 94%);
+          padding: 0.8rem;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 0.8rem;
+          }
+
+          i {
+            color: hsl(0, 0%, 30%);
+          }
+
+          .toggle-password {
+            cursor: pointer;
+          }
+
+        }
+      }
+
+      .remember-me {
+        input[type="checkbox"] {
+          width: 15px;
+          height: 15px;
+          accent-color: #2EAAAE;
+
+
+        }
+
+        .input-wrapper {
+          background: #fff;
+          box-shadow: 0 0 1rem hsl(231, 62%, 94%);
+          padding: 0.8rem;
+          border-radius: 20px;
+          gap: 0.5rem;
+        }
+      }
+
+      .login-btn {
+        padding: 1rem;
+        background: #2EAAAE;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #23999a;
+        }
+      }
+    }
+  }
+}

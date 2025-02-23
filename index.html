@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login CareConect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="shortcut icon" href="imgs/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="imgs/White Logo.png" alt="Logo">
+        </div>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-lock"></i> 
+                    <input type="password" id="password" name="password" required>
+                    <i class="fa-regular fa-eye toggle-password"></i>
+                </div>
+            </div>
+
+            <div class="remember-me">
+                <div class="input-wrapper">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector(".toggle-password").addEventListener("click", function () {
+            const passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                this.classList.remove("fa-eye");
+                this.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                this.classList.remove("fa-eye-slash");
+                this.classList.add("fa-eye");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
