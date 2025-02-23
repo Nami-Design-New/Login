@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #c4cfcfd1;
-  height: 100vh;
+  height: 100dvh;
 
   .login-container {
     width: 90%;
@@ -63,6 +63,8 @@ body {
           display: flex;
           align-items: center;
           gap: 0.5rem;
+          overflow: hidden;    
+
 
           input {
             flex: 1;
@@ -77,6 +79,8 @@ body {
 
           .toggle-password {
             cursor: pointer;
+            flex-shrink: 0; 
+            font-size: 1rem; 
           }
 
         }
