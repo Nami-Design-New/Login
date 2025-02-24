@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login CareConect</title>
+    <title>Login CareConnect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="shortcut icon" href="imgs/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css?v=1">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lottie Player Library -->
+    <script src="lottie.min.js"></script>
+
 </head>
+
 <body>
+
     <div class="login-container">
         <div class="logo">
-            <img src="imgs/White Logo.png" alt="Logo">
+            <img src="imgs/CareConnect Logo English Primary + Black.png" alt="Logo">
         </div>
         <form id="loginForm">
             <div class="input-group">
@@ -23,27 +30,26 @@
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
             </div>
-
             <div class="input-group">
                 <label for="password">Password</label>
                 <div class="input-wrapper">
-                    <i class="fa-solid fa-lock"></i> 
-                    <input type="password" id="password" name="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
                     <i class="fa-regular fa-eye toggle-password"></i>
                 </div>
             </div>
-
             <div class="remember-me">
                 <div class="input-wrapper">
                     <input type="checkbox" id="remember">
                     <label for="remember">Remember me</label>
                 </div>
             </div>
-
             <button type="submit" class="login-btn">Login</button>
         </form>
     </div>
-
+    <div class="lottieContainer">
+        <lottie-player src="imgs/login2.json" speed="1" loop autoplay></lottie-player>
+    </div>
     <script>
         document.querySelector(".toggle-password").addEventListener("click", function () {
             const passwordField = document.getElementById("password");
@@ -58,7 +64,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>
