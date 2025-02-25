@@ -11,26 +11,30 @@ label {
 
 body {
     display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
+    /* justify-content: center; */
+    flex-direction: column;
     align-items: center;
     background: #c4cfcfd1;
     min-height: 100dvh;
     gap: 24px;
     /* flex-wrap: wrap; */
     padding: 20px;
+    padding-bottom: 0;
 }
 .lottieContainer {
-    height: 400px;
-    width: 400px;
+    /* margin-top: auto; */
+    height: 200px;
+    width: 800px;
     overflow: hidden;
+    display: flex;
+    justify-content: end;
     @media screen and (max-width: 768px) {
         display: none;
     }
     lottie-player {
         height: 100%;
         width: 100%;
-        transform: scale(1.9);
+        transform: scale(2);
     }
 }
 
@@ -43,6 +47,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 0 2rem #f7f7f790;
     gap: 1.5rem;
+    margin: auto;
 
     .logo {
         height: 100px;
